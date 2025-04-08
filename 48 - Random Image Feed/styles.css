@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tangerine", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: radial-gradient(
+    circle,
+    #0e9ca3,
+    #0092be,
+    #0082df,
+    #006cf3,
+    #1242eb
+  );
+}
+
+.title {
+  margin: 10px 0 0;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  font-size: 4rem;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.container img {
+  object-fit: cover;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: grow 1s ease-in-out forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
