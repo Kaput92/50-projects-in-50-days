@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgba(0, 132, 255, 0.466);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  margin: 10vh auto;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: rgb(185, 11, 11);
+  font-size: 30px;
+}
+
+small {
+  font-size: inherit;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+small #times {
+  font-weight: bold;
+  color: rgb(185, 11, 11);
+}
+
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background: url("https://images.unsplash.com/photo-1536344709779-cb4b5af30726?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center/cover;
+  border: 2px solid rgba(223, 210, 192, 0.747);
+  border-radius: 10px;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.5s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
